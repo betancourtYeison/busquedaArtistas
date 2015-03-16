@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Busqueda de Artista</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Artista Online</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/artist.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Oh yeah</h1>
+    <div class="container">
+        <h1>Búsqueda de Artistas</h1>
+        <div class="col-lg-offset-2 col-md-offset-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <p>Carga la información completa de tu artista favorito!</p>
+            <div class="form-group">
+                <label for="artista">Nombre del artista</label> 
+                <input name="artist" type="text" id="artista" placeholder="Ejemplo: Aventura" class="form-control">
+            </div>
+            <button id="botonArtista" class="btn btn-primary">Cargar información</button>
+            <button id="botonVolver" class="btn btn-info" disabled="true">Volver</button>
+            <div id="contentArtist">
+
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <p>Carga la información de los artistas mas populares!</p>
+            <div class="form-group">
+                <label for="ciudad">Nombre de la ciudad</label> 
+                <input name="country" type="text" id="ciudad" placeholder="Ejemplo: Colombia" class="form-control">
+            </div>
+            <button id="botonCiudad" class="btn btn-primary">Cargar Top</button>
+            <button id="botonMiCiudad" class="btn btn-primary">Cargar Top de tu país</button>
+            <div id="contentCountry">
+
+            </div>
+        </div>  
+    </div>  
+
+    <!-- jQuery en el CDN de otro, como Google -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Luego si tus scripts -->
+    <script src="js/artist.js"></script>
 </body>
 </html>
